@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户登录</title>
+		<style>
+			#title {
+				text-align: center;
+				font-size: 25px;
+				height: 50px;
+			}
+			.tipBar_orange {
+				height: 34px;
+				color: #ed6a0c;
+				background-color: #fffbe8;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			
+			.tipBar_blue {
+				height: 34px;
+				color: #5d89fa;
+				background-color: #ecf9ff;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			
+			input {
+				height: 50px;
+				border: none;//去掉边框
+				outline: 1px;
+			}
+			
+			.inputBar {
+				padding-left: 10px;
+			}
+			
+			/*喇叭不会弄了用字符去代替吧
+			.laba{
+				height: 50px;
+				padding-right: 10px;
+			}
+			*/
+			
+			#log_in {
+				/*没效果
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				*/
+			   visibility: hidden;
+				width: 100%;
+				height: 50px;
+				margin-top: 2%;
+				background-color: #07c160;
+				border-radius: 25px;
+				font-size: 100%;
+				color: #ffffff;
+			}
+			
+			.button01 {
+				float: right;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				margin: 1%;
+				background-color: #07c160;
+				border-radius: 25px;
+				font-size: 100%;
+				color: #ffffff;
+			}
+			
+			hr {
+				color: #f6f7f7;
+				visibility: hidden;
+				
+			}
+			
+			a {
+				text-decoration: none;
+				color: #ffffff;
+			}
+			
+			#submitButton {
+				height: 50px;
+				width: 100%;
+				background: #07c160;
+				border-radius: 25px;
+				color: #ffffff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div width="60%">
+			<div id="title">
+				兰州理工大学学生健康打卡系统
+			</div>
+			<div class="tipBar_orange">
+				🔊 早发现、早报告、早隔离、早治疗！
+			</div>
+			<div class="tipBar_orange">
+				🔊 便捷登录：http://xsjk.lut.edu.cn
+			</div>
+			<div class="tipBar_blue">
+				🔊 接收不到验证码的同学请一小时后重试或尝试更换手机！
+			</div>
+			<div>
+				<form>
+					<div class="inputBar">
+						手机号：<input type="text" size="100%" name="userPhone" value="" 
+							placeholder="请输入手机号" maxlength="11" required="required" /> <br />
+					</div>
+					<hr size="0.1" />
+					<div id="identifyCode" class="inputBar">
+						验证码：<input type="text" size="100%" name="identifyCode" value="" placeholder="请输入验证码"
+							 maxlength="6" required="required"/>
+							<input type="button" name="getCode" value="获取验证码" class="button01" />
+					</div>
+					<hr size="0.1" />
+					<!-- <input type="submit" name="submit01" value="登录" id="log_in" /> -->
+					<!-- <input type="image" src="imgs/登录.png" value="" name="log_in" id="log_in" /> -->
+				</form>
+				<div id="submitButton">
+					<a href="submit.html">登录</a>
+				</div>
+			</div>
+		</div>		
+	</body>
+</html>
