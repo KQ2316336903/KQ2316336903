@@ -1,13 +1,18 @@
+/*清除内外边距*/
 *{
 	margin: 0;
 	padding: 0;
 }
 
+/**/
 body{
 	width: 100%;
 	height: 100vh;
+	/*设置为弹性布局*/
 	display: flex;
+	/*主轴（x）方向上的排列方式：居中排列*/
 	justify-content: center;
+	/*交叉轴（y）方向上的排列方式：居中排列*/
 	align-items: center;
 	background-color: #efeeee;
 }
@@ -15,33 +20,49 @@ body{
 .container{
 	width: 700px;
 	height: 600px;
+	border: 1px red solid;
+	/*弹性布局*/
 	display: flex;
+	/*x轴上的排列方式：space-around形式的分散对齐*/
 	justify-content: space-around;
+	/*换行*/
 	flex-wrap: wrap;
+	/*y轴方向上的排列方式：居中排列*/
 	align-items: center;
 }
 
 .container .box{
+	/*弹性布局*/
 	display: flex;
+	/*x轴方向space-around分散对齐*/
 	justify-content: space-around;
+	/*列布局，为了使图片和文字上下分布*/
 	flex-direction: column;
+	/*y轴方向上居中对齐*/
 	align-items: center;
 	width: 100px;
 	height: 140px;
 	margin: 20px;
+	/* border: 1px orangered solid; */
 }
 
 .container .box .img{
 	width: 100px;
 	height: 100px;
+	/*添加盒子阴影*/
 	box-shadow: 18px 18px 30px rgba(0,0,0,0.1),
 		-18px -18px 30px rgba(255,255,255,1);
-	border-radius: 20px;
+	/*修改圆角*/
+	border-radius: 25px;
+	/*弹性布局且使图片居中*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	/*图片背景颜色与body背景颜色一致*/
 	background-color: #efeeee;
+	/*设置过渡动画*/
 	transition: box-shadow .2s ease-in-out;
+	/*这个有用吗？*/
 	position: relative;
 }
 
