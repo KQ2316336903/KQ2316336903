@@ -20,7 +20,7 @@ body{
 .container{
 	width: 700px;
 	height: 600px;
-	border: 1px red solid;
+	/* border: 1px red solid; */
 	/*弹性布局*/
 	display: flex;
 	/*x轴上的排列方式：space-around形式的分散对齐*/
