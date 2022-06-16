@@ -60,7 +60,7 @@ body{
 	justify-content: center;
 	/*图片背景颜色与body背景颜色一致*/
 	background-color: #efeeee;
-	/*设置过渡动画*/
+	/*设置自身默认过渡动画*/
 	transition: box-shadow .2s ease-in-out;
 	/*这个有用吗？*/
 	position: relative;

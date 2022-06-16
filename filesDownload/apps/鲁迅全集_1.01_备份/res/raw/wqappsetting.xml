@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AppSettings>
+	<AppID>fd9aa8ca14574115ac241d438c1bbfcd</AppID>
+	<PublisherID>df5abdeb93f84b8aa7fa00fbbc52e415</PublisherID>
+	<URL></URL>
+	<AppStoreURL></AppStoreURL>
+	<BackgroundColor>000000</BackgroundColor>
+	<TextColor>CC0033</TextColor>
+	<UseLocationInfo></UseLocationInfo>
+	<RefreshRate>30</RefreshRate>
+	<TestMode>N</TestMode>
+	<NextADCount>3</NextADCount>
+	<LoopTimes>1</LoopTimes>
+	<UseEmbeddedBrowser>Y</UseEmbeddedBrowser>
+ 	<FittingStrategy>stretch</FittingStrategy>
+</AppSettings>
