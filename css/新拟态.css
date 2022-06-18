@@ -1,3 +1,9 @@
+
+/* 设置高亮颜色为透明，解决手机端点击出现蓝色填充的问题。但是好像不用设置这个也可以？不！必须得设置！ */
+body {
+	-webkit-tap-highlight-color: transparent;
+}
+
 /*清除内外边距*/
 *{
 	margin: 0;
