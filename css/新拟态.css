@@ -24,35 +24,143 @@ body{
 }
 
 .container{
-	width: 700px;
-	height: 500px;
+	width: 1000px;
+	height: 100%;
 	/* border: 1px red solid; */
 	/*弹性布局*/
 	display: flex;
-	/*x轴上的排列方式：space-around形式的分散对齐*/
-	justify-content: space-around;
+	justify-content: center;
 	/*换行*/
 	flex-wrap: wrap;
 	/*y轴方向上的排列方式：居中排列*/
 	align-items: center;
 }
 
-.container .box{
+
+
+/* --------------begain-------------以下为顶栏内容css-------------begain--------- */
+.container .HeadBar {
+	/* border: 1px solid black; */
+	width: 1000px;
+	height: 100px;
+	border-radius: 0 0 20px 20px;
+	display: flex;
+	/* 垂直居中排列 */
+	align-items: center;
+	box-shadow:1px 5px 20px 0px rgba(0,0,0,0.12);
+}
+
+/* 头像 */
+.container .HeadBar .touXiang {
+	/* border: 1px black solid; */
+	width: 80px;
+	height: 80px;
+	margin: 0 20px;
+}
+.container .HeadBar .touXiang img {
+	width: 80px;
+	height: 80px;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
+	transition: all .2s ease-in-out;
+}
+.container .HeadBar .touXiang img:hover {
+	/* 正确设置png图片的阴影显示 */
+	
+	box-shadow: 3px 8px 25px 0px rgba(0,0,0,0.2);
+	margin-top: -2px;
+	transition: all .2s ease-in-out;
+	/* 设置头像不可点击 */
+	
+}
+
+/* 昵称和签名 */
+.container .HeadBar .myInfo {
+	/* border: 1px black solid; */
+	width: 200px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	/* 设置元素排列布局 */
+	flex-direction: column;
+	align-items: flex-start;
+}
+/* 昵称 */
+.container .HeadBar .myInfo .niCheng {
+	font-size: 20px;
+	font-weight: bold;
+	/* background-color: aqua; */
+	/* padding-left: 15px; */
+	text-shadow: 1px 5px 20px 0px black);
+	transition: all .2s ease-in-out;
+}
+.container .HeadBar .myInfo .niCheng:hover {
+	font-size: 20.5px;
+	margin-top: -2px;
+	text-shadow: 1px 5px 20px 0px rgba(0,0,0,0.12);
+	transition: all .2s ease-in-out;
+}
+/* 签名 */
+.container .HeadBar .myInfo .qianMing {
+	font-size: 10px;
+	color: rgb(100,100,100);
+	/* display: none; */
+}
+
+/* 右侧其他说明内容 */
+.container .HeadBar .qiTa {	
+	/* border: 1px black solid; */
+	width: 650px;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.container .HeadBar .qiTa .textArea {
+	/* background-color: aqua; */
+	font-size: 5px;
+	width: 250px;
+	height: 50px;
+	color: rgb(100,100,100);
+	font-weight: normal;
+	transition: all .2s ease-in-out;
+}
+.container .HeadBar .qiTa .textArea:hover {
+	color: black;
+	/* font-weight: bold; */
+	transition: all .2s ease-in-out;
+}
+
+/* --------------end----------------以上为顶栏内容css-------------end--------- */
+
+
+
+/* --------------begain-------------以下为中部内容新拟态风格css---------begain----- */
+.container .Body_01 {
+	/* border: 1px solid blue; */
+	width: 100%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.container .Body_01 .box{
 	/*弹性布局*/
 	display: flex;
 	/*x轴方向space-around分散对齐*/
-	justify-content: space-around;
+	justify-content: center;
 	/*列布局，为了使图片和文字上下分布*/
 	flex-direction: column;
 	/*y轴方向上居中对齐*/
 	align-items: center;
 	width: 100px;
 	height: 140px;
-	margin: 20px;
+	margin: 30px;
 	/* border: 1px orangered solid; */
 }
 
-.container .box .img{
+.container .Body_01 .box .img{
 	width: 100px;
 	height: 100px;
 	/*添加盒子阴影*/
@@ -72,17 +180,17 @@ body{
 	position: relative;
 }
 
-.container .box .img img{
+.container .Body_01 .box .img img{
 	width: 60px;
 	transition: width .2s ease-out;
 }
 
-.container .box p{
+.container .Body_01 .box p{
 	margin-top: 10px;
 	color: slategray;
 }
 
-.container .box .img:hover{
+.container .Body_01 .box .img:hover{
 	box-shadow: 0px 0px 0px rgba(0,0,0,0.1),
 		0px 0px 0px rgba(255,255,255,1),
 	inset 18px 18px 30px rgba(0,0,0,0.1),
@@ -90,7 +198,27 @@ body{
 	transition: box-shadow .2s ease-out;
 }
 
-.container .box .img:hover img{
+.container .Body_01 .box .img:hover img{
 	width: 58px;
 	transition: width .2s ease-out;
 }
+
+/* --------------end---------------以上为中部内容新拟态风格css--------end--------- */
+
+
+
+/* --------------begain-------------以下为底栏内容css-------------begain--------- */
+.container .FootBar {
+	/* border: 1px solid blue; */
+	width: 100%;
+	height: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .foot_text {
+	align: center;
+	font-size: 10px;
+	color: rgb(100,100,100);
+}
+/* --------------end----------------以上为底栏内容css-------------end--------- */
