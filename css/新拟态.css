@@ -60,13 +60,14 @@ body{
 .container .HeadBar .touXiang img {
 	width: 80px;
 	height: 80px;
-	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0);
+	filter: drop-shadow(0px 0px 25px rgba(0,0,0,0.0));
+	/* box-shadow: 0px 0px 20px 0px rgba(0,0,0,0); */
 	transition: all .2s ease-in-out;
 }
 .container .HeadBar .touXiang img:hover {
 	/* 正确设置png图片的阴影显示 */
-	
-	box-shadow: 3px 8px 25px 0px rgba(0,0,0,0.2);
+	filter: drop-shadow(3px 8px 10px rgba(0,0,0,0.1));
+	/* box-shadow: 3px 8px 25px 0px rgba(0,0,0,0.2); */
 	margin-top: -2px;
 	transition: all .2s ease-in-out;
 	/* 设置头像不可点击 */
@@ -86,22 +87,22 @@ body{
 }
 /* 昵称 */
 .container .HeadBar .myInfo .niCheng {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
 	/* background-color: aqua; */
 	/* padding-left: 15px; */
-	text-shadow: 1px 5px 20px 0px black);
+	text-shadow: 1px 5px 20px rgba(0,0,0,0.0);
 	transition: all .2s ease-in-out;
 }
 .container .HeadBar .myInfo .niCheng:hover {
-	font-size: 20.5px;
-	margin-top: -2px;
-	text-shadow: 1px 5px 20px 0px rgba(0,0,0,0.12);
+	font-size: 22.5px;
+	margin-top: -1px;
+	text-shadow: 1px 3px 5px rgba(0,0,0,0.2);
 	transition: all .2s ease-in-out;
 }
 /* 签名 */
 .container .HeadBar .myInfo .qianMing {
-	font-size: 10px;
+	font-size: 12px;
 	color: rgb(100,100,100);
 	/* display: none; */
 }
@@ -218,7 +219,7 @@ body{
 }
 .container .foot_text {
 	align: center;
-	font-size: 10px;
+	font-size: 12px;
 	color: rgb(100,100,100);
 }
 /* --------------end----------------以上为底栏内容css-------------end--------- */
