@@ -1,0 +1,12 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body .container {
+	width: 100%;
+	height: 800px;
+	background: /* linear-gradient(0deg,rgb(147,181,207),#b9dec9) */
+	radial-gradient(closest-corner,#93b5cf,#b9dec9)
+	;
+}
