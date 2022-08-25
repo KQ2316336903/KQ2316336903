@@ -1,0 +1,166 @@
+body {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*清除内外边距*/
+*{
+	/* margin: 0;
+	padding: 0; */
+}
+
+body {
+	width: 100%;
+	/* height: ; */
+	/* 布局 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* 背景色 */
+	background-color: #faf9f8;
+}
+
+.container {
+	width: 60%;
+	/* height: ; */
+	/* 布局： */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+/* HeadBar------------------------------------------------------------------------------------------------------------- */
+
+.HeadBar {
+	/* border: 1px solid red; */
+	width: 100%;
+	height: 50px;
+	display: flex;
+	/* 水平居中方式 */
+	justify-content: left;
+	/* 垂直居中方式 */
+	align-items: flex-end;
+	margin: 20px;
+}
+
+.HeadBar .logo {
+	display: flex;
+	justify-content: center;
+}
+
+.HeadBar .logo img {
+	width: 50px;
+	height: 50px;
+}
+
+.HeadBar .headText {
+	/* border: 1px solid green; */
+	/* width: 30%; */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.HeadBar .headText p {
+	/* border: 1px solid blue; */
+	font-size: 23px;
+	font-weight: 600;
+	
+}
+
+/* Body_01_Android------------------------------------------------------------------------------------------------------------- */
+
+.Body_01_Android {
+	width: 100%;
+	border-radius: 10px;
+	background-color: #ffffff;
+	margin: 20px;
+	box-shadow: 1px 5px 20px 0px rgba(0,0,0,0.12);
+	transition: box-shadow .2s ease-in-out;
+}
+
+.Body_02_win {
+	width: 100%;
+	border-radius: 10px;
+	background-color: #ffffff;
+	margin: 20px;
+	box-shadow: 1px 5px 20px 0px rgba(0,0,0,0.12);
+	transition: box-shadow .2s ease-in-out;
+}
+
+.Body_03_else {
+	width: 100%;
+	border-radius: 10px;
+	background-color: #ffffff;
+	margin: 20px;
+	box-shadow: 1px 5px 20px 0px rgba(0,0,0,0.12);
+	transition: box-shadow .2s ease-in-out;
+}
+
+.smallBar {
+	/* width: 100%;
+	display: flex;
+	justify-content: flex-start; */
+	margin: 20px;
+}
+
+.smallBar p {
+	font-size: 18px;
+}
+
+
+.appBox {
+	margin: 10px;
+	padding: 5px;
+	/* width: 100%; */
+	height: 25px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	/* border: 1px black solid; */
+	border-radius: 8px;
+	background-color: #FFFFFF;
+	transition: background-color .1s ease-in-out;
+}
+.appBox:hover {
+	background-color: #e9e9ea;
+	transition: background-color .1s ease-in-out;
+}
+
+.appImg {
+	/* border: 1px red solid;
+	width: 25px;
+	height: 25px;
+	margin: 0;
+	padding: 5px,0px,0px,0px; */
+	/* display: flex;
+	justify-content: flex-start;
+	align-items: center; */
+}
+.appImg img {
+	/* border: 1px blue solid; */
+	width: 23px;
+	height: 23px;
+	margin: 0;
+	padding: 100px,0,0,0;
+	/* display: flex;
+	align-items: center; */
+}
+
+.appName {
+	color: black;
+	/* width: 800px;
+	height: 20px; */
+	/* padding: 100px,0px,0px,0px;
+	border: 1px green solid;
+	background-color: antiquewhite; */
+	/* display: flex;
+	justify-content: flex-start; */
+	/* align-items: center; */
+}
+
+a {
+	text-decoration: none;
+}
