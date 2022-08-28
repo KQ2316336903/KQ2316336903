@@ -1,0 +1,440 @@
+@font-face {
+	font-family: "cuqian";
+	src: url(".././font/方正粗倩_GBK.ttf");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url(.././imgs/背景图/Background-06.jpg);
+	background-attachment: scroll;
+	background-attachment: fixed;
+}
+
+.container {
+	//width: 80%;
+}
+
+#headBar {
+	border: solid 3px white;
+	border-radius: 100px;
+	margin: 20px 30px;
+	weidth: 100%;
+	/* height: 10vh; */
+	background-color: rgba(255,255,255,0.2);
+}
+
+.LOGO img {
+	width: 220px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+/* 通用大盒子 */
+.BigBox {
+/* 	border: 1px red solid; */
+	width: 100%;
+	height: 100vh;
+	margin: 100px,0px,100px,0px;
+}
+
+/* ---------------------------begain-------------------------------------轮播图盒子css---------------------begain----------------------------------------------- */
+#banner {
+	/* border: 1px solid green; */
+	list-style: none;
+	position: absolute;
+	padding: 0;
+	top: 120px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1200px;
+	height: 300px;
+	margin-top: calc(50vh - 250px);
+	cursor: pointer;
+}
+
+#banner li {
+	float: left;
+	position: absolute;
+	left: 0;
+	transition-duration: 0.4s;
+}
+
+#banner div {
+	width: 50px;
+	height: 5px;
+	border: 1px solid rgb(156,156,156);
+	bottom: -80px;
+	position: absolute;
+	background-color: white;
+}
+
+#banner .cur_img {
+	width: 600px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+#banner .img_Public {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	z-index: 100;
+	filter: drop-shadow(0px 0px 25px rgba(235,57,169,0.5));
+}
+
+#banner .left {
+	left: 0;
+}
+
+#banner .right {
+	right: 0;
+}
+
+.lunbotu {
+	width: 600px;
+	filter: drop-shadow(0px 0px 25px rgba(3,204,204,0.2));
+}
+/* ---------------------------end-------------------------------------轮播图盒子css---------------------end----------------------------------------------- */
+
+/* ---------------------------begain-----------------------------------赛事安排-------------------------bagain------------------------------------------- */
+.BigBox02 {
+	/* border: 1px solid blue; */
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	margin: 100px,0px,100px,0px;
+}
+
+.titleAll {
+	/* border: 1px solid white; */
+	width: 100%;
+	height: 30vh;
+	
+}
+
+.titleAll p {
+	font-family: "cuqian";
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+.smallBox {
+	border: solid 3px white;
+	border-radius: 50px;
+	width: 60%;
+	height: 300px;
+	background-color: rgba(255,255,255,0.1);
+	margin: -80px 300px;
+	box-shadow: 0px 0px 50px rgba(255,255,255,0.3);
+}
+
+.smallBox .smallTitle {
+	font-family: "cuqian";
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	margin: 50px 0px 20px 0px;
+}
+/* ---------------------------end-----------------------------------赛事安排------------------------end------------------------------------------ */
+
+/* ---------------------------begin-----------------------------------公告栏------------------------begin------------------------------------------ */
+.smallTitle {
+	/* font-size: 30px; */
+}
+
+.zhengwen {
+	/* font-size: 50px; */
+	padding: 5px 40px 5px 40px;
+	color: white;
+	font-family: unset;
+	text-align: left;
+	text-indent: 40px;
+}
+/* ---------------------------end-----------------------------------公告栏------------------------end------------------------------------------ */
+
+
+/* ---------------------------begain--------------------------------往期回顾---------------------begain------------------------------------------ */
+
+.vedioSmallBox {
+	position: relative;
+	width: 300px;
+	/* height: 257px; */
+}
+
+.vedioSmallBox .v-img {
+	position: absolute;
+	top: 25px;
+	left: 10px;
+	width: 280px;
+	/* height: 193px; */
+}
+
+.vedioSmallBox .v-border {
+	position: absolute;
+	width: 300px;
+	height: 193px;
+}
+
+.vedioSmallBox .v-info {
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 200px;
+}
+
+.BigBox03 {
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* height: 1000px; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: -20px 0px;
+	padding: 0px;
+}
+
+.vedioBox {
+	/* border: 1px solid green; */
+	display: flex;
+	width: 300px;
+	height: 230px;
+	margin: 20px 40px;
+}
+
+.titleAll_02 {
+	width: 100%;
+	height: 80px;
+}
+
+.titleAll_02 p {
+	font-family: "cuqian";
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+/* ---------------------------end-----------------------------------往期回顾------------------------end------------------------------------------ */
+
+/* ---------------------------begain---------------------------------赛事相关---------------------begain------------------------------------- */
+.BigBox-saishi {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.titleAll_03 {
+	width: 100%;
+	height: 80px;
+	margin: 200px 0px 50px 0px;
+}
+
+.titleAll_03 p {
+	font-family: "cuqian";
+	font-size: 50px;
+	color: white;
+	text-align: center;
+}
+
+.smallBox02 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid white;
+	border-radius: 50px;
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 70%;
+	height: 450px;
+	box-shadow: 0px 0px 50px rgba(255,255,255,0.3);
+}
+
+.smallBox02 .smallBox03 {
+	/* border: 1px solid red; */
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.smallBox02 .smallBox03 .box-01 {
+	/* border: 1px solid blue; */
+	text-align: center;
+	width: 80%;
+	height: 45px;
+	color: white;
+	font-family: "cuqian";
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.smallBox02 .smallBox03 .logos {
+	border: 2px solid rgba(255,255,255,0.3);
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 60%;
+	height: 70%;
+	margin-bottom: 100px;
+}
+
+.smallBox02 .smallBox03 .logos img {
+	/* width: ; */
+}
+/* ---------------------------end---------------------------------赛事相关---------------------end------------------------------------- */
+
+/* ---------------------------begain---------------------------------商品推荐---------------------begain------------------------------------- */
+.BigBox-shop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 150vh;
+	margin-top: 100px;
+}
+
+.no-shop img {
+	width: 1000px;
+	border: 3px solid white;
+	border-radius: 50px;
+	/* background-image: url("./imgs/轮播图/轮播图03_广告位招租.jpg"); */
+}
+/* ---------------------------end---------------------------------商品推荐---------------------end------------------------------------- */
+
+
+/* ---------------------------begain---------------------------------联系我们---------------------begain------------------------------------- */
+.CallMe {
+	/* border: 1px solid blue; */
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	margin-top: 200px;
+}
+
+.CallMe .dalogo {
+	width: 500px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+}
+
+.CallMe hr {
+	color: rgb(2, 204, 205);
+	width: 1160px;
+	position: absolute;
+	top: 310px;
+	left: 180px;
+}
+
+.CallMe .CallMeBox {
+	/* border: 1px solid blue; */
+	width: 1160px;
+	/* height: 300px; */
+	position: absolute;
+	top: 350px;
+	left: 180px;
+}
+
+.guanzhu {
+	/* border: 1px solid green; */
+	position: relative;
+	width: 500px;
+	/* height: 300px; */
+}
+
+.CallMe .CallMeBox .guanzhu p {
+	color: white;
+}
+
+#text01 {
+	font-size: 30px;
+	font-family: "cuqian";
+	position: absolute;
+	top: 20px;
+	left: 60px;
+}
+
+#text02 {
+	position: absolute;
+	top: 225px;
+	left: 60px;
+}
+
+#text03 {
+	position: absolute;
+	top: 225px;
+	left: 240px;
+}
+
+#text04 {
+	position: absolute;
+	top: 260px;
+	left: 55px;
+}
+
+#qq {
+	width: 120px;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+
+#bilibili {
+	width: 120px;
+	position: absolute;
+	top: 100px;
+	left: 200px;
+}
+
+
+#kefu {
+	/* border: 1px solid red; */
+	/* background-color: antiquewhite; */
+	width: 200px;
+	/* height: 300px; */
+	position: relative;
+	top: 0px;
+	left: 900px;
+}
+
+#text05 {
+	color: white;
+	font-size: 30px;
+	font-family: "cuqian";
+	position: absolute;
+	top: 20px;
+	left: 0px;
+}
+
+#kefu0 {
+	width: 120px;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+}
+
+#text06 {
+	color: white;
+	position: absolute;
+	top: 225px;
+	left: 30px;
+}
+
+/* ---------------------------end---------------------------------联系我们---------------------end------------------------------------- */
