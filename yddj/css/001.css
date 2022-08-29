@@ -336,7 +336,9 @@ body {
 }
 
 .CallMe hr {
-	color: rgb(2, 204, 205);
+	background-color: rgba(2, 204, 205,1);
+	height: 2px;
+	border: none;
 	width: 1160px;
 	position: absolute;
 	top: 310px;
