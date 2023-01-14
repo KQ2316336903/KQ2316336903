@@ -3,17 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
-	<link rel="stylesheet" href="./css/新拟态.css">
+	<link rel="stylesheet" href="./css/新拟态day.css">
 	<title>我的主页</title>
     <link rel="shortcut icon" href="https://www.z4a.net/images/2023/01/12/favicon.png" type="image/png" />
-	<script>
-		window.onload = function(){
-			var a1 = document.getElementById("tyc7576");
-			a1.onclick = function(){
-				alert(a1);
-			}
-		}
-	</script>
+	<script src="./js/dayNightSwitch.js" type="text/javascript" charset="utf-8"> </script>
+	
 </head>
 <body>
 	<!--整个大的盒子-->
@@ -95,8 +89,9 @@
 			<p class="foot_text">空间站正在建设中，目前仅适配PC端，请持续关注</p>
 		</div>
 		
-		
-		
+	</div>
+	<div id="dayNightDiv">
+		<img src="https://www.z4a.net/images/2023/01/14/day_and_night.png" id="dayNightBtn" />
 	</div>
 </body>
 </html>
