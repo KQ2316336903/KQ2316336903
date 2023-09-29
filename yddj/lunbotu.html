@@ -93,7 +93,9 @@
 				let left = document.querySelector('.left');
 				let right = document.querySelector('.right');
 				for (let i = 0; i < szdiv.length; i++) {
+					//添加标记？
 					szdiv[i].name = i + 1;
+					//所有图片都是堆叠在左边的，顺序改变left的值的倍数达到轮换的效果
 					szdiv[i].style.left = 190 * (i+1) + "px";
 					if ((i+1) != 5) {
 						sz[i].id = 5 - (i+1);
@@ -105,7 +107,9 @@
 				//切换效果公共代码
 				function effect() {
 					for(let i = 0; i < sz.length; i++) {
+						//改变zIndex属性使其有正确的上下图层堆叠关系——zIndex值越大，图层越靠上！
 						sz[i].style.zIndex = i;
+						//使用transform变换的scale缩放属性，只给一个值表示xy轴等比例缩放
 						sz[i].style.transform = "scale(1)"
 					}
 					sz[len - 2].style.left = "0px";
@@ -134,7 +138,8 @@
 				}
 				
 				//开始3秒为一周期切换下一张
-				let timer = setInterval(get_next, 5000);
+				let timer = setInterval(get_next, 5000); 
+				
 				
 				//为左切换图片赋值点击操作
 				left.onclick = function() {
@@ -142,13 +147,14 @@
 					get_pre();
 					timer = setInterval(get_next, 5000);
 				}
-				
 				//为右切换图片赋值点击操作
 				right.onclick = function() {
 					clearInterval(timer);
 					get_next();
 					timer = setInterval(get_next, 5000);
 				}
+				
+				
 				
 				let len = sz.length - 1;
 				effect();

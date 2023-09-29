@@ -2,7 +2,6 @@ window.onload = function(){
 	var btn01 = document.getElementById("dayNightBtn");
 	var tips = "day";
 	var linkList = document.getElementsByTagName("link");
-	var imgs = document.getElementById("dayNightBtn").src;
 	btn01.onclick = function(){
 		if(tips == "day"){
 			tips = "night";
